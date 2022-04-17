@@ -1,5 +1,5 @@
 # Python_Todo_console
-Todo app in console using python 3.10.4.\n
+Todo app in console using python 3.10.4.
 Date of creation 17/4/2022.
 
 Todo:
