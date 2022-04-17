@@ -7,4 +7,4 @@ Todo:
  -load
  -rename
  -delete
- -show amount of done to total and percentage of done: 10/100 | done - 10%
+ -show amount of done to total and percentage of done. Example( 10/100 | done - 10%).
