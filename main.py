@@ -18,7 +18,15 @@ class Task:
 # Varibales ------------------------------------------------------------------------------------------------------------
 task_number = 0
 tasks = []
-help = "To create new task: 'New task'.\nmark task as done: 'done'.\nmark task as not done: 'not done'.\nfor help: 'help'.\nClear tasks list: 'clear'\nLoad list: 'load'\nSave list: 'save'\nTo quit: 'Quit'!"
+help = """To create new task: 'New task'.
+mark task as done: 'done'.
+mark task as not done: 'not done'.
+for help: 'help'.
+Clear tasks list: 'clear'.
+Load list: 'load'.
+Save list: 'save'.
+Rename task: 'rename'.
+To quit: 'Quit'!"""
 # Functions ------------------------------------------------------------------------------------------------------------
 
 # Todo! 
@@ -65,6 +73,12 @@ def Function(_task_number):
         print(help)
         wait = input("Enter any key!")   
 
+    elif(user_input.lower() == "rename"):
+        rename_task_index = input("Enter index of task to rename: ")
+        if(int(rename_task_index) < len(tasks)):
+            new_task_name = input("Enter new task name: ")
+            tasks[int(rename_task_index)].name = new_task_name 
+    
     elif(user_input.lower() == "save"):
         Save()
 
